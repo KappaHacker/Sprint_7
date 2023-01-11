@@ -8,7 +8,6 @@ public class CourierGenerator {
 
     }
 
-
     public Courier getRandomCourier() {
         return new Courier(RandomStringUtils.randomAlphanumeric(7), RandomStringUtils.randomAlphanumeric(7), RandomStringUtils.randomAlphanumeric(7));
 

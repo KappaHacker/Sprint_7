@@ -10,8 +10,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-
 public class LoginCourierTest {
     private CourierGenerator courierGenerator = new CourierGenerator();
     private Credentials credentials;

@@ -34,7 +34,6 @@ public class CourierClient {
                 .then();
     }
 
-
     @Step("Удаление курьера")
     public ValidatableResponse deleteCourier(int сourierId) {
         return given().log().all()

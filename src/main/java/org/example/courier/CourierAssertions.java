@@ -6,7 +6,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.greaterThan;
 
-
 public class CourierAssertions {
     public void successfullCreation(ValidatableResponse response) {
         response.assertThat()

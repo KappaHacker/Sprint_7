@@ -9,10 +9,8 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 public class CreateCourierTest {
-    protected final CourierGenerator courierGenerator= new CourierGenerator();
+    protected final CourierGenerator courierGenerator = new CourierGenerator();
     private CourierClient courierClient;
     private Courier courier;
     private CourierAssertions courierAssertions;
@@ -31,10 +29,9 @@ public class CreateCourierTest {
     @Description("Курьера можно создать")
     public void courierCanBeCreated() {
         ValidatableResponse responseCreateCourier = courierClient.createCourier(courier);
-        courierAssertions.successfullCreation(responseCreateCourier);
         Credentials credentials = Credentials.from(courier);
-        ValidatableResponse responseLoginCourier = courierClient.loginCourier(credentials);
-        сourierId = responseLoginCourier.extract().path("id");
+        сourierId = courierClient.loginCourier(credentials).extract().path("id");
+        courierAssertions.successfullCreation(responseCreateCourier);
     }
 
     @Test
