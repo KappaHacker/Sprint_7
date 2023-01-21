@@ -61,8 +61,10 @@
                 <version>2.22.2</version>
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
+                         <forkCount>3</forkCount>
+    <reuseForks>true</reuseForks>
                     <argLine>
-                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                        -Dfile.encoding=UTF-8
                     </argLine>
                     <properties>
                         <property>
