@@ -62,9 +62,6 @@
                 <configuration>
                          <useSystemClassLoader>false</useSystemClassLoader>
                     <testFailureIgnore>false</testFailureIgnore>
-                    <argLine>
-                        -Dfile.encoding=UTF-8
-                    </argLine>
                     <properties>
                         <property>
                             <name>listener</name>
