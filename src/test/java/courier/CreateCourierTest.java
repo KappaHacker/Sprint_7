@@ -7,7 +7,7 @@ import io.restassured.response.ValidatableResponse;
 import org.example.courier.*;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 public class CreateCourierTest {
     protected final CourierGenerator courierGenerator = new CourierGenerator();
     private CourierClient courierClient;
