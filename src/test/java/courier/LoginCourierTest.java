@@ -8,7 +8,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.example.courier.*;
 import org.junit.After;
 import org.junit.Before;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class LoginCourierTest {
     private CourierGenerator courierGenerator = new CourierGenerator();
